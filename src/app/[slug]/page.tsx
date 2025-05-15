@@ -10,7 +10,7 @@ export default function RedirectPage() {
     if (typeof window !== "undefined") {
       const slug = pathname;
       if (!slug) return;
-      window.location.href = `https://blog.electisec.com/${slug}`;
+      window.location.href = `https://reports.electisec.com/${slug}`;
     }
   }, [pathname]);
 
