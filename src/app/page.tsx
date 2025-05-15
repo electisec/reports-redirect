@@ -1,21 +1,17 @@
-"use client"
+"use client";
 
-import { useEffect, useState } from 'react';
-import { usePathname } from 'next/navigation';
+import { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 
 export default function Home() {
   const pathname = usePathname();
 
   useEffect(() => {
-    if (typeof window !== 'undefined') {
-      const newUrl = `https://electisec.com${pathname}`;
+    if (typeof window !== "undefined") {
+      const newUrl = `https://blog.electisec.com${pathname}`;
       window.location.href = newUrl;
     }
   }, [pathname]);
 
-  return (
-    <>
-    </>
-  );
+  return <></>;
 }
-
